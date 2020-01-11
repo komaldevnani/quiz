@@ -1,5 +1,3 @@
-QUES_NO = 3
-TOTAL_SCORE = 3
 class Questions
   attr_accessor :question, :options, :answer
     

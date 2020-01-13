@@ -1,22 +1,3 @@
-class Questions
-  attr_accessor :question, :options, :answer
-    
-  def initialize(question, options, answer)
-    @question = question
-    @options = options
-    @answer = answer
-  end
-
-  def check(user_ans)
-    @answer == user_ans
-  end
-  
-  def print_ques
-    puts @question
-    puts @options.join("\n")
-  end
-end
-
 class Result
   attr_accessor :score
   
@@ -24,7 +5,7 @@ class Result
     @score = 0
   end
 
-  def score_increament
+  def score_change
     @score+=1
   end
 
